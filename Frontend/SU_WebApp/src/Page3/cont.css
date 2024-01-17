@@ -1,0 +1,108 @@
+.Contract_title{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;   
+}
+
+.Contract_info{
+    width: 100%;
+    height: 800px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.Contract_info p{
+    margin: 20px;
+}
+
+
+
+.Social{
+    width: 20%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #00AA88;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0px 0px 6px #00AA88;
+    transition: 0.5s;
+}
+
+.Social:hover{
+    box-shadow: 0px 0px 30px #00AA88;
+    transition: 0.5s;
+}
+
+.Social img{
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    border: 3px solid #00AA88;
+}
+
+.MapAndNews{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.Map{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 6px #00AA88;
+    transition: 0.5s;
+}
+
+.Map img{
+    width: 1000px;
+    height: 100%;
+    border: 4px solid #00AA88;
+}
+
+.News{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 6px #00AA88;
+    transition: 0.5s;
+}
+
+.News2{
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 4px solid #00AA88;
+}
+
+.News:hover{
+    box-shadow: 0px 0px 30px #00AA88;
+    transition: 0.5s;
+}
+
+.Map:hover{
+    box-shadow: 0px 0px 30px #00AA88;
+    transition: 0.5s;
+}
+
+
+

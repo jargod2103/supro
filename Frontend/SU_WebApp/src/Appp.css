@@ -1,0 +1,23 @@
+.sidetab{
+    width: 100%;
+    height: 90%;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.tab{
+    position: fixed;
+    width: 60px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center
+}
+
+.tab img{
+    width: 30px;
+    margin-right: 30px;
+}

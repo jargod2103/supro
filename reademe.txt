@@ -1,0 +1,48 @@
+//รายละเอียดไฟล์
+
+1.fonts ไฟล์เก็บfonts
+2.Footer ไฟล์ที่เก็บFooter tab
+3.imgs ไฟล์ใช้เก็บรูปภาพ
+4.Navbar ไฟล์ที่เก็บฝั่งของNavbar
+5.Page1 เก็บหน้า Home และ SlideShow
+6.Page2 เก็บส่วนของหน้า ใบเสนอราคา
+7.Page3 เก็บส่วนของหน้าติดต่อโรงพิมพ์
+8.Sidetab เก็บtab
+
+
+//การSetupและเปิดใช้งานโปรเจค
+
+1.เปิดโฟลเดอร์นี้ใน Vscode 
+2.เปิดTerminalขึ้นมา (หากไม่มีเข้าไปที่ View --> Terminal)
+3.พิมพ์คำสั่งต่อไปนี้ในTerminal  --> cd Frontend --> cd SU_WepApp
+4.พิมพ์คำสั่งต่อไปนี้เพื่อติดตั้งPackageที่จำเป็น 4.1 npm i --> 4.2 npm @emailjs/browser
+5.เปิดใช้งานโปรเจคโดยการพิมพ์ npm run dev 
+6.เปิดBrowserตัวใดก็ได้ขึ้นมาและพิมไปที่ http://localhost:5173/ หรือคลิ้กลิ้งที่vscodeให้มาในtab Terminal
+
+//การ Setup การส่งอีเมล
+
+1.เข้าไปที่เว็บไซต์ https://www.emailjs.com/
+2.สมัครเข้าใช้งานแล้วเข้าสู่ระบบ
+3.เข้าไปที่ Email Services คลิก Add new Services , 
+Connectที่อีเมลแอดมินที่ต้องการส่งข้อความจากเว็บไปให้แอดมิน และติ้กถูก Send test email to verify configuration
+
+4.เข้าไปที่แถบ Email Templates และสร้างTemplates กดที่Edit_Contents
+และนำข้อความต่อไปนี้ไปใส่ ส่วนนี้คือโครงสร้างของอีเมล
+
+
+Hello I am {{first_name}} {{last_name}},
+
+You got a new message from Email: {{email_user}}
+Customer Telephone Number: {{telephone_number}}
+
+รายละเอียดงาน : {{message}}
+
+โรงพิมพ์มหาวิทยาลัยศิลปากร
+
+5.กด Save Templates
+
+6.เปิดไฟล์ offer.jsx ขึ้นมา
+ บรรทัด27 .sendForm('Services_id','Templates_id',form.current,'public_key')
+ นำ Seviceid Templates_id , public_key จากบัญชีemailjs
+ โดยpublic_keyเอาจากกดไปที่แถบAccount มองหาAPI keyและก็อปรหัสpublic_keyมาใส่แทนที่ข้อความข้างต้น
+ ส่วนของServices,Templates_idเอามาจากแถบที่สร้างService,Templates
